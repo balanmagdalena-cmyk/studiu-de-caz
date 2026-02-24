@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studiu de Caz: Importanța Git/GitHub în Lucrul în Echipă</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #092343;
+            background-color: #f6f8fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #001b3b;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        .section {
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(190, 10, 10, 0.1);
+        }
+
+        .section h2 {
+            color: #09031a;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .section h3 {
+            color: #24292f;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .git-commands {
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+        }
+
+        .git-commands pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .sidebar {
+            background: white;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 1.5rem;
+            position: sticky;
+            top: 20px;
+        }
+
+        .sidebar h3 {
+            color: #24292f;
+            margin-bottom: 1rem;
+        }
+
+        .changelog-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #d0d7de;
+        }
+
+        .changelog-item:last-child {
+            border-bottom: none;
+        }
+
+        .changelog-item time {
+            color: #57606a;
+            font-size: 0.875rem;
+        }
+
+        .changelog-item p {
+            margin: 0.25rem 0;
+        }
+
+        .resource-list {
+            list-style: none;
+        }
+
+        .resource-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-list a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+
+        .popular-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .popular-card {
+            background: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .popular-card h4 {
+            color: #0969da;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid #d0d7de;
+            text-align: center;
+            color: #57606a;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: #57606a;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #0969da;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #80b4f0;
+        }
+
+        .tag {
+            background: #ddf4ff;
+            color: #0969da;
+            padding: 0.25rem 0.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1> -- Studiu de Caz -- Importanța Git/GitHub </h1>
+            <p>Lucrul în echipă la proiecte comune cu Git și GitHub</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <main>
+                <!-- Noțiuni introductive section -->
+                <section class="section">
+                    <h2>🚀 Noțiuni introductive despre documentația GitHub</h2>
+                    <p>Învățați cum să începi să construiești, să distribui și să întreții software cu GitHub. Explorează produsele noastre, creează-ți un cont și conectează-te cu cea mai mare comunitate de dezvoltatori din lume.</p>
+                    <div style="margin-top: 1rem;">
+                        <span class="tag">Pornire rapidă</span>
+                    </div>
+                </section>
+
+                <!-- Începeți aici section -->
+                <section class="section">
+                    <h2>📖 Inveti despre GitHub și Git</h2>
+                    
+                    <h3>Despre GitHub și Git</h3>
+                    <p>Poți folosi GitHub și Git pentru a colabora la muncă. Git este un sistem de control al versiunilor open-source, iar GitHub este platforma care găzduiește proiectele Git și facilitează colaborarea.</p>
+                    
+                    <h3>Planurile GitHub-ului</h3>
+                    <p>O prezentare generală a planurilor de prețuri GitHub: Gratuită, Pro și Team. Fiecare plan oferă caracteristici diferite pentru nevoile echipelor.</p>
+                    
+                    <h3>Noțiuni introductive despre contul dvs. GitHub</h3>
+                    <p>Cu un cont personal pe GitHub, poți importa sau crea repozitori, colabora cu alții și te poți conecta cu comunitatea GitHub.</p>
+                    
+                    <h3>Noțiuni introductive despre echipa GitHub</h3>
+                    <p>Cu GitHub Team, grupurile de persoane pot colabora în mai multe proiecte simultan, într-un cont de organizație.</p>
+                </section>
+
+                <!-- Popular section -->
+                <section class="section">
+                    <h2>🔥 Popular</h2>
+                    <div class="popular-section">
+                        <div class="popular-card">
+                            <h4>Crearea unui cont pe GitHub</h4>
+                            <p>Creează un cont personal pentru a începe să utilizezi GitHub.</p>
+                        </div>
+                        <div class="popular-card">
+                            <h4>Salut Lume</h4>
+                            <p>Urmează acest exercițiu Hello World pentru a învăța fluxul de lucru pentru solicitările de extragere.</p>
+                        </div>
+                        <div class="popular-card">
+                            <h4>Configurați Git</h4>
+                            <p>În inima GitHub se află Git, sistemul de control al versiunilor open-source.</p>
+                        </div>
+                        <div class="popular-card">
+                            <h4>Despre versiunile de GitHub Docs</h4>
+                            <p>Poți citi documentația care reflectă produsul GitHub pe care îl utilizați în prezent.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Comenzi Git folosite -->
+                <section class="section">
+                    <h2>🖥️ Comenzi Git folosite pentru acest proiect</h2>
+                    <div class="git-commands">
+                        <pre>
+# Inițializarea repository-ului local
+git init
+
+# Configurare utilizator
+git config --global user.name "Numele Tău"
+git config --global user.email "email@example.com"
+
+# Creare fișier și adăugare în staging
+git add index.html
+git add .
+
+# Commit inițial
+git commit -m "Initial commit: Adăugare studiu de caz Git/GitHub"
+
+# Conectare la repository-ul remote
+git remote add origin https://github.com/utilizator/studiu-de-caz.git
+
+# Verificare remote
+git remote -v
+
+# Push pe branch-ul principal
+git branch -M main
+git push -u origin main
+
+# Pentru actualizări ulterioare
+git status
+git add .
+git commit -m "Descriere modificări"
+git push
+
+# Pentru a trage modificări de la colegi
+git pull origin main
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- Importanța Git/GitHub -->
+                <section class="section">
+                    <h2>💡 Importanța Git și GitHub în lucrul în echipă</h2>
+                    
+                    <h3>1. Controlul Versiunilor</h3>
+                    <p>Git permite urmărirea tuturor modificărilor făcute în cod, oferind posibilitatea de a reveni la versiuni anterioare dacă este necesar.</p>
+                    
+                    <h3>2. Colaborare Eficientă</h3>
+                    <p>Mai mulți dezvoltatori pot lucra simultan la același proiect fără a suprascrie munca celorlalți, folosind branch-uri și pull request-uri.</p>
+                    
+                    <h3>3. Backup și Securitate</h3>
+                    <p>Codul este stocat în cloud pe GitHub, oferind backup automat și protecție împotriva pierderii datelor.</p>
+                    
+                    <h3>4. Transparență și Responsabilitate</h3>
+                    <p>Istoricul commit-urilor arată cine a făcut ce modificări și când, facilitând identificarea problemelor.</p>
+                    
+                    <h3>5. Code Review</h3>
+                    <p>Pull request-urile permit revizuirea codului înainte de integrare, îmbunătățind calitatea și prevenind erorile.</p>
+                    
+                    <h3>6. Integrare Continuă</h3>
+                    <p>GitHub Actions și alte instrumente de CI/CD pot fi integrate pentru testare automată și deployment.</p>
+                </section>
+
+                <!-- Trending repositories -->
+                <section class="section">
+                    <h2>📈 Trending repositories</h2>
+                    <div style="margin-bottom: 1rem;">
+                        <h4>x1xhlol/system-prompts-and-models-of-ai-tools</h4>
+                        <p>FULL Augment Code, Claude Code, Cluelly, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Taycer AI...</p>
+                        <div class="repo-stats">
+                            <span>⭐ 122k</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>huggingface/skills</h4>
+                        <p>Python</p>
+                        <div class="repo-stats">
+                            <span>⭐ 4.2k</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="#" style="color: #0969da;">See more →</a>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <!-- Ask anything section -->
+                <div style="margin-bottom: 2rem;">
+                    <h3>🔍 Ask anything</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem;">• Ask</li>
+                        <li style="margin-bottom: 0.5rem;">• All repositories</li>
+                        <li style="margin-bottom: 0.5rem;">• Task</li>
+                        <li style="margin-bottom: 0.5rem;">• Create issue</li>
+                        <li style="margin-bottom: 0.5rem;">• Write code</li>
+                        <li style="margin-bottom: 0.5rem;">• Git</li>
+                        <li style="margin-bottom: 0.5rem;">• Pull requests</li>
+                    </ul>
+                </div>
+
+                <!-- Latest from changelog -->
+                <div style="margin-bottom: 2rem;">
+                    <h3>📋 Latest from our changelog</h3>
+                    <div class="changelog-item">
+                        <time>4 hours ago</time>
+                        <p>Enterprise-defined custom organization roles are generally available</p>
+                    </div>
+                    <div class="changelog-item">
+                        <time>12 hours ago</time>
+                        <p>IP allow list coverage extended to EMU namespaces in public preview</p>
+                    </div>
+                    <div class="changelog-item">
+                        <time>14 hours ago</time>
+                        <p>Enterprise team support in organization APIs</p>
+                    </div>
+                    <div class="changelog-item">
+                        <time>3 days ago</time>
+                        <p>Organization-level Copilot usage metrics dashboard available in public...</p>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="#" style="color: #0969da;">View changelog →</a>
+                    </div>
+                </div>
+
+                <!-- Resurse utile -->
+                <div>
+                    <h3>📚 Resurse utile</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://docs.github.com/en/get-started" target="_blank">GitHub Docs - Get Started</a></li>
+                        <li><a href="https://www.w3schools.com/git/git_remote_getstarted.asp" target="_blank">W3Schools - Git Remote</a></li>
+                        <li><a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects" target="_blank">About GitHub Projects</a></li>
+                        <li><a href="https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-github" target="_blank">GitHub Copilot Questions</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Status</a>
+                <a href="#">Community</a>
+                <a href="#">Docs</a>
+                <a href="#">Contact</a>
+                <a href="#">Manage cookies</a>
+                <a href="#">Do not share my personal information</a>
+            </div>
+            <p>© 2026 GitHub, Inc. - Studiu de Caz: Importanța Utilizării Aplicațiilor de lucru în echipă GIT/GITHUB</p>
+        </footer>
+    </div>
+</body>
+</html>
