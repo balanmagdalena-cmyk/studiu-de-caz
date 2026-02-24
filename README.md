@@ -1,2 +1,2 @@
-# studiu-de-caz
-Git GITHUB
+# Studiu de Caz Git/GitHub
+Acesta este proiectul meu
