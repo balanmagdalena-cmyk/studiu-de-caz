@@ -25,21 +25,57 @@
         }
 
         header {
-            background-color: #001b3b;
+            background: linear-gradient(90deg,#0f172a 0%,#08203a 60%);
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             margin-bottom: 2rem;
+            box-shadow: 0 4px 18px rgba(2,6,23,0.15);
         }
 
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.25rem;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.4px;
         }
 
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.06);
+        }
+
+        .hero-cta {
+            background: #06f;
+            color: white;
+            padding: 0.5rem 0.9rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-left: 1rem;
+            display: inline-block;
         }
 
         .main-content {
@@ -209,8 +245,11 @@
 <body>
     <header>
         <div class="header-content">
-            <h1> -- Studiu de Caz -- Importanța Git/GitHub </h1>
-            <p>Lucrul în echipă la proiecte comune cu Git și GitHub</p>
+            <div>
+                <h1>Studiu de Caz: Importanța Git &amp; GitHub</h1>
+                <p style="opacity:0.95; margin-top:6px;">Colaborare eficientă pentru proiecte de echipă</p>
+            </div>
+           
         </div>
     </header>
 
